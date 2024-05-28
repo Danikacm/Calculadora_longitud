@@ -1,0 +1,67 @@
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FF0000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.edificio .contenido {
+    width: 90%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%; 
+    height: auto; 
+    margin-right: 20px; 
+}
+
+.edificio .contenido h3 {
+    font-size: 20px; 
+    font-weight: bold;
+    color: #333; 
+    margin-bottom: 10px; 
+}
+
+.edificio {
+    width: 900px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.edificio h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.informacion {
+    width: 700px;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+
+.informacion h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.informacion p {
+    margin-bottom: 10px;
+}

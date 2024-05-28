@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo final: Cálculo integral</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h3>Trabajo final: Cálculo integral</h3>
+    </header>
+    <main>
+        <section class="edificio">
+            <div class="contenido">
+                <img src="imagenes/oficina_en_alquiler_edificio_the_point_puerto_santa_ana_centro_de_guayaquil_0.jpg" alt="Descripción de la imagen">
+                <div class="contenido">
+                    <h2>Introducción</h2>
+                    <p>El proyecto de integrales surgió como una simple curiosidad por saber cuál sería la correspondiente longitud de este edificio.
+                        Empezando por adquirir datos acerca de las dimensiones de los pisos con el afán de construir
+                un modelo de la función para hallar su longitud</p>
+                <h2>Marco teórico:</h2>
+                <p>The Point es parte del megaproyecto inmobiliario Ciudad del Río, de la
+                    promotora Pronobis. Ubicado en el Puerto Santa Ana, en el centro de Guayaquil, el
+                    imponente edificio de 36 pisos se levanta como el más alto del país, con 137 metros de altura.
+                    Este edificio, de 50 000 m² de construcción, está compuesto por dos torres: una de
+                    estacionamientos y una de oficinas. La primera alberga 480 vehículos. La torre comercial
+                    abarca 417 oficinas, de las cuales 30 ya están funcionando. <br>
+                    Los primeros siete pisos están destinados a un ‘business center’, 17 salas de reuniones y una
+                    moderna cafetería. Todo con un mobiliario que sigue la tendencia arquitectónica del proyecto.
+                    </p>
+                <p>En la planta baja se instalarán ocho locales comerciales y 35 bodegas. Los tres últimos pisos,
+                    los más altos de la torre, están aún en adecuación.</p>   
+                <p>El concepto fue desarrollado por la diseñadora colombiana Adriana Hoyos. El ‘lobby’, de 235 m²,
+                     tiene pisos y paredes de mármol, en tonos blancos y grises.</p>
+
+                </div>
+            </div>
+        </section>
+        
+        <section class="informacion">
+            <h2>Cálculo de la longitud de un edificio: The point</h2>
+            <form id="calculo-form">
+                <label for="intervalo_a">Intervalo a:</label>
+                <input type="number" id="intervalo_a" name="intervalo_a" required> <br><br>
+                <label for="intervalo_b">Intervalo b:</label>
+                <input type="number" id="intervalo_b" name="intervalo_b" required> <br><br>
+                <label for="numero_intervalos">Número de intervalos:</label>
+                <input type="number" id="numero_intervalos" name="numero_intervalos" required> <br><br>
+                <button type="submit">Calcular</button>
+            </form>
+            <p id="resultado"></p>
+        </section>
+        <canvas id="grafico" width="400" height="200"></canvas>
+
+    </main>
+    <script src="te.js"></script>
+</body>
+</html>
